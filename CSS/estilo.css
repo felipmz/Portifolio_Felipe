@@ -1,0 +1,544 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+    font-family: "Manrope", sans-serif;
+    
+  
+    
+}
+.cabeca{
+    display: flex;
+    justify-content: right;
+    
+    
+}
+.linha_superior{
+    background-color: rgba(41, 185, 79, 0);
+    padding: 10px 10px 10px 10px;
+    margin-right: 30px;
+    position: relative;
+    
+}
+
+
+/*Botão ingles e portugus*/
+.toggle {
+    margin-bottom: 40px;
+}
+
+.toggle > input {
+    display: none;
+}
+
+.toggle > label {
+    position: relative;
+    display: block;
+    height: 20px;
+    width: 44px;
+    background: #898989;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.toggle > label:after {
+    position: absolute;
+    left: -2px;
+    top: -3px;
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 100px;
+    background: #fff;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.05);
+    content: '';
+    transition: all 0.3s ease;
+}
+.toggle > label:active:after {
+    transform: scale(1.15, 0.85);
+}
+.toggle > input:checked ~ label {
+    background: #e5e5e7ec;
+}
+.toggle > input:checked ~ label:after {
+    left: 20px;
+    background: #00bab4;
+}
+.toggle > input:disabled ~ label {
+    background: #d5d5d5;
+    pointer-events: none;
+}
+.toggle > input:disabled ~ label:after {
+    background: #bcbdbc;
+}
+
+.menu_img{
+    padding: 35px 0px 0px 50px;
+    position: relative;
+    top: 45px;
+}
+
+.foto-perfil img{
+   width: 460px;
+   height: 462px;
+   margin-left: 40%;
+   box-shadow: 0px 0px 40px 2px #3675c4da;
+   border-radius: 50%;
+
+   animation-name:  mov-esquerda;
+   animation-duration: 2s;
+   animation-fill-mode: both;
+   animation-delay: 0.5s;
+   
+    
+}
+.foto-perfil div{
+    padding: 10px 10px 50px 31px;
+}
+
+
+    
+
+@keyframes mov-esquerda { /*animação foto*/
+    from{margin-left: 40%;}
+    to{margin-left: 10%;}
+}
+
+
+@keyframes aparece-titulos {
+    from{
+    width: 0;
+    }
+    to{
+        width: 800px;
+    }
+}
+
+
+
+/*menu*/
+@keyframes menu_ani {
+    from{
+        width: 0;
+    }
+
+}
+@keyframes menu_ani2 {
+    0%{
+        width: 0;
+    }
+
+}
+.menu_dentro{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 700px;
+    z-index: 1;
+    text-align: center;
+    overflow: hidden;
+    top: 140px;
+
+    display: none;
+    border-radius: 0px 15px 15px 0px;
+    animation: menu_ani 1s;
+}
+.menu_elemento{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+   
+    
+}
+
+#ele{
+    padding: 35px 0px 0px 15px;
+    font-size: 20px;
+    margin: 30px;
+
+    text-decoration: none;
+    font-size: 25px;
+    
+    
+    width: 100%;
+    margin-left:0px ;
+    padding-bottom: 30px;
+    padding-right: 10px;
+    
+}
+.menu_elemento a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transition: background-color 0.3s; 
+}
+.menu_elemento a:hover {
+    background-color: #0d6de298;
+    color: #fff;
+}
+
+
+
+.texto_sobre_eu{
+    width: 700px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    font-size: 20px;
+}
+.sobre_mim{
+    padding: 100px 0px 0px 250px;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.botao_ling{
+    position: absolute;
+    padding: 5px;
+    width: 80px;
+    font-weight: 700;
+    border-radius: 8px;
+    border: none;
+    left: -600%;
+    top: -8px;
+}
+
+.projetos{
+    background-color:  #7da0ca;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    flex-wrap: wrap; 
+}
+
+.img{
+    width: 700px;
+    margin: 10px;
+    border-radius: 15px;
+    cursor: pointer; 
+    filter: none;
+}
+.botao_pros{
+    position:relative ;
+    justify-content: center;
+    top: -45%;
+    display: flex;
+    
+}
+.botao_pro1, .botao_pro2{
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+    border-radius: 10px;
+    border: none;
+    margin: 5px;
+}
+.tecnologias{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center ;
+    
+}
+.tec_dentro{
+    display: flex;
+    justify-content: center;
+    
+}
+.tec_dentro_ele{
+    margin: 10px;
+    
+}
+.bt_sociais{
+    padding: 10px;
+}
+.img_msg{
+    width: 70px ;
+    margin: 20px ;
+   
+}
+.sobre_mim{
+    color: #ffffff;
+}
+
+.projetos input{
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+.botao {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+    transition: background-color 1s ease;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.301);
+}
+
+.botao:hover {
+    background-color:/*#ad92df*/#6232bb ;
+    color: #ffffff;
+    
+}
+.pros {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.img {
+    transition: transform 0.3s;
+    display: block;
+}
+
+.pros:hover .img {
+    transform: scale(1.05);
+    filter: blur(4px);
+}
+
+.botao {
+    padding: 10px;
+    margin: 5px;
+    transition: transform 0.5s;
+}
+
+.pros:hover .botao {
+    transform: scale(1.1);
+}
+
+.hidden-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.pros:hover .hidden-buttons {
+    display: flex;
+}
+
+.sobre_mim {
+    margin-bottom: 90px;
+    position: relative;
+    padding-top: 30px; 
+}
+
+.imagem_sobre_mim {
+    width: 490px;
+}
+
+.sobre_mim_h1 {
+    font-size: 60px;
+    text-wrap: nowrap;
+    position: absolute;
+    top: 0;
+    left: 55%;
+    transform: translateX(-50%);
+    padding: 20px 0;
+}
+
+.texto_sobre_eu {
+    margin-top: 90px;
+}
+
+
+
+
+
+
+
+/*texto redimencionamento*/
+.titulo {
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+ 
+}
+
+@media (max-width: 1900px) {
+    .titulos{
+        left:40px;
+        text-wrap: wrap;
+        margin-top: 4%;
+        
+    }
+    #tl1 {
+        font-size: 55px;
+    }
+
+    #tl2 {
+        font-size: 38px; 
+    }
+    .texto_sobre_eu{
+        font-size: 18px;
+        text-wrap: wrap;
+        position: absolute;
+        left: 12%;
+        top: 30%;
+
+    }
+    .imagem_sobre_mim{
+        margin-right: -83px;
+        
+    }
+    .imagem_sobre_mim{
+        width: 450px;
+    }
+    .foto-perfil div{
+        padding: 10px 10px 50px 31px;
+    }
+    .foto-perfil img{
+        width: 360px;
+        height: 362px;
+        margin-left: 40%;
+        box-shadow: 0px 0px 40px 2px #3675c4da;
+        border-radius: 50%;
+    
+}}
+
+.titulo {
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+ 
+}
+
+@media (max-width: 1600px) {
+    .titulos{
+        left:40px;
+        text-wrap: wrap;
+        margin-top: 4%;
+        
+    }
+    #tl1 {
+        font-size: 45px;
+    }
+
+    #tl2 {
+        font-size: 38px; 
+    }
+    .texto_sobre_eu{
+        font-size: 18px;
+        text-wrap: wrap;
+        position: absolute;
+        left: 12%;
+        top: 30%;
+
+    }
+    .imagem_sobre_mim{
+        margin-right: -83px;
+        
+    }
+    .imagem_sobre_mim{
+        width: 450px;
+    }
+    .foto-perfil div{
+        padding: 10px 10px 50px 31px;
+    }
+    .foto-perfil img{
+        width: 360px;
+        height: 362px;
+        margin-left: 40%;
+        box-shadow: 0px 0px 40px 2px #3675c4da;
+        border-radius: 50%;
+    
+}}
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+    .foto-perfil{
+        display: none;
+    }
+   .heder{
+        display: flex;
+        padding-top: 200px;
+    
+        
+   }
+   .ele_he img{
+         width: 40px;
+    }
+    .img_msg{
+        width: 40px;
+    }
+    div.titulos {
+        position: absolute;
+        font-size: 40px;
+    }
+    .sobre_mim{
+      
+    }
+    .texto_sobre_eu{
+         width: 400px;
+         text-align: center;
+        
+    }
+ }
+
+/*animação digitação*/
+.titulo{
+  
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+    animation: type 4s steps(60, end);
+    
+}
+
+.titulo:nth-child(2){
+    animation: type2 5s steps(60, end);
+
+   
+}
+
+span{
+    animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+    from { width: 0; } 
+} 
+
+@keyframes type2{
+    0% { width: 0; }
+    50% { width: 0; }
+    100% { width: 100%; } 
+} 
+
+@keyframes blink{
+    to { opacity: 0; }
+}
+
+::selection{
+    background: black;
+    
+}
+
