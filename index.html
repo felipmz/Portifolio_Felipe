@@ -352,7 +352,19 @@ var para = document.getElementById('para')
         }
 
         
+function verificarLarguraJanela() {
+    var sobreeu = document.getElementById('sobreeu');
+    var largura = window.innerWidth;
+    if (largura <= 500) {
+        sobreeu.style.display = 'block';
+    } if (largura > 500) {
+        sobreeu.style.display = 'none';
+    }
+}
 
+window.addEventListener('resize', verificarLarguraJanela);
+
+verificarLarguraJanela();
 
 //tradução do site
 
