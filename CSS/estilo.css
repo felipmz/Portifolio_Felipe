@@ -586,6 +586,9 @@ span{
         max-width: 50px;
         
     }
+     .sobre_mim_h1{
+        text-wrap: nowrap;
+    }
     #my_tec{
         display: flex;
         justify-content: center;
@@ -626,4 +629,8 @@ span{
     
     }
     
-
+@media only screen and (min-width: 600px) {
+       html, body {
+            overflow-x: hidden;
+        }
+    }
