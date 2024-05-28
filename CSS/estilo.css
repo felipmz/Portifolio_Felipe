@@ -601,6 +601,9 @@ span{
         display: flex;
         
     }
+    .sobre_mim_h1{
+        text-wrap: nowrap;
+    }
 
 
 
