@@ -545,6 +545,7 @@ span{
     
 }
 
+
 @media (max-width: 500px) {
     footer{
         flex-direction: column;
@@ -558,7 +559,12 @@ span{
     }
     .img_msg{
         max-width: 45px;
-        padding-top: 80px;
+        padding-top: 20px;
+    }
+    .sobreeu{
+        position: absolute;
+        text-align: center;
+        top: 50%;
     }
     .tudo-titulo{
         position: absolute;
@@ -595,19 +601,4 @@ span{
         display: flex;
         
     }
-    .sobre_mim{
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 350px;
-    }
-    .texto_sobre_eu p{
-        align-items: center;
-        display: none;
-    }
-    
-    .imagem_sobre_mim{
-        display: none;
-    }
-    
-    }
-    
+
