@@ -432,20 +432,20 @@ function Botao_ling() {
 
 
 
-
-
-
-
-
-
+function meusome() {
+    var menu_dentro = document.getElementById("menu_dentro");
+    menu_dentro.style.display = "none";
+    menu_img1.src = 'https://i.pinimg.com/originals/26/9d/d1/269dd16fa1f5ff51accd09e7e1602267.png';
+}
 
 function menu() {
     var menu_dentro = document.getElementById("menu_dentro");
-    var style = window.getComputedStyle(menu_dentro); // Obtém o estilo computado
+    var style = window.getComputedStyle(menu_dentro); 
     if (style.display === "none") {
         menu_dentro.style.display = "block";
         menu_img1.src = 'https://assets-global.website-files.com/6189b0871bf1074d6da9cb51/618c3be4f6e78941d1529e45_1024px-Cross_icon_(white).svg.png';
-    } else {
+    }
+    else {
         menu_dentro.style.display = "none";
         menu_img1.src = 'https://i.pinimg.com/originals/26/9d/d1/269dd16fa1f5ff51accd09e7e1602267.png';
     }
