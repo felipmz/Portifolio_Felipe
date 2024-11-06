@@ -475,6 +475,8 @@ html, body {
 
 
 
+
+
 @media (max-width: 500px) {
     .foto-perfil{
         display: none;
@@ -495,15 +497,17 @@ html, body {
         position: absolute;
         font-size: 40px;
     }
-    .sobre_mim{
-      
-    }
+   
     .texto_sobre_eu{
          width: 400px;
          text-align: center;
         
     }
+    .tec_dentro_ele{
+        color: transparent;
+    }
  }
+
 
 /*animação digitação*/
 .titulo{
